@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Booking</title>
+</head>
+<body>
+    <h1>Villa Booking Form</h1>
+    <form id="bookingForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="number">Number:</label>
+        <input type="text" id="number" name="number" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        <button type="submit">Book</button>
+    </form>
+
+    <script >
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const number = document.getElementById('number').value;
+    const email = document.getElementById('email').value;
+    const date = document.getElementById('date').value;
+
+    // Retrieve existing bookings from localStorage
+    const bookings = JSON.parse(localStorage.getItem('bookings')) || {};
+
+    // Check if the date is already booked
+    if (bookings[date]) {
+        alert('Date is already booked');
+    } else {
+        // Save the booking
+        bookings[date] = { name, number, email };
+        localStorage.setItem('bookings', JSON.stringify(bookings));
+        alert('Booking successful');
+    }
+});
+
+    </script>
+</body>
+</html>
