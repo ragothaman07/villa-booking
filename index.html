@@ -3,55 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <!--fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<!--fonts over-->    
-
+    <title>Bougainvillea Luxury Villa</title>
+     <!--fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <!--fonts over--> 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-  
-   <style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     
-   </style>
+     
+   
 </head>
-<body class="font-[Poppins] mt-0">
-    <!--whole tag start -->
-    <div class="Whole 2xl:containerm- mx-auto">
 
-        <!--top nav bar-->
-       
-        <header class="bg-custom-color font-semibold">
-            <nav class="flex justify-between item-center w-[92%] mx-auto py-3 px-6">
+  
+<body class=" font-[Poppins] mt-0">
+    <!-- Navigation Bar -->
+    <nav class="color-1 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <a href="#" class="text-white text-lg font-semibold">Bougainvillea Luxury Villa</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="flex md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Desktop Menu -->
+            <div class="hidden md:block">
+                <ul class="flex space-x-10">
+                    <li><a href="#hme" class="text-white hover:text-gray-300">Home</a></li>
+                    <li><a href="#gallery" class="text-white hover:text-gray-300">Gallery</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-300">About</a></li>
+                    <li><a href="#contact" class="text-white hover:text-gray-300">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-                <div><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hotel"><path d="M10 22v-6.57"/><path d="M12 11h.01"/><path d="M12 7h.01"/><path d="M14 15.43V22"/><path d="M15 16a5 5 0 0 0-6 0"/><path d="M16 11h.01"/><path d="M16 7h.01"/><path d="M8 11h.01"/><path d="M8 7h.01"/><rect x="4" y="2" width="16" height="20" rx="2"/></svg></div>
-                <div>
-                    <ul class="flex items-center gap-[4vw]">
-                        <li>
-                            <a class="hover:text-gray-500" href="">Home</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-gray-500" href="">About</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-gray-500" href="">Galary</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-gray-500" href="">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <button class="bg-yellow-700 text-white px-5 py-2 rounded-3xl hover:bg-slate-400 tra">sign in</button>
-                </div>
-            </nav>
-        </header>
-        <!--top nav bar-->
-
-
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+        <ul class="flex flex-col space-y-4 items-center pt-4">
+            <li><a href="#home" class="text-white hover:text-gray-300">Home</a></li>
+            <li><a href="#gallery" class="text-white hover:text-gray-300">Gallery</a></li>
+            <li><a href="#" class="text-white hover:text-gray-300">About</a></li>
+            <li><a href="#contact" class="text-white hover:text-gray-300">Contact</a></li>
+        </ul>
     </div>
-    <!--whole tag end -->
+
+    <!-- Content -->
+    <!-- Content -->
+<section class="flex flex-col md:flex-row" id="home">
+    <!-- Image Section -->
+    <div class="md:w-2/3">
+        <img src="777.jpeg" alt="Showcase Image" class="w-full h-full object-cover md:order-2">
+    </div>
+    <!-- Text Section -->
+    <div class="md:w-1/3 bg-white text-black p-7 md:order-1 font-['Poppins']">
+        <p class=" text-6xl  pt-8">Want a premium & luxury villa ?</p>
+        <p class="pt-9 text-2xl leading-9 tracking-wide font-[]"><span class="underline-animation color-2 font-semibold text-2xl ">Bougainvillea Luxury Villa</span> is a private villa for conducting grand events and a auspicious family meeting</p>
+        <div class="text-center pt-10">
+            <button class="button" onclick="window.location.href='form.html'"> 
+                <span>click here to book</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+        
+    </section>
+    <!--first page over-->
+    <section>
+        <div class="bg-gradient-to-b from-white to-gray-100">
+            <H1 class="text-4xl font-bold py-4 px-8 ">
+                <span class=" underline-animation color3 ">A Private villa and Wedding venue</span>
+            </H1>
+            
+        </div>
+    </section>
+    <section>
+        <!--galary-->
+        <div class="underline hidden md:block">
+            <div class="container mx-auto grid grid-cols-3 gap-8 p-6" id="gallery">
+                <!-- Gallery items -->
+                <div class="relative overflow-hidden border border-gray-200 rounded-md shadow-md w-[30] max-h-96 min-w-72">
+                    <img src="111.jpeg" alt="Image 1" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform hover:scale-105">
+                    <div>
+                        <p class="font-bold text-[90]">A grand villa near ECR </p>
+                    </div>
+                </div>
+    
+                <div class="relative overflow-hidden border border-gray-200 rounded-md shadow-md w-[30] max-h-96 min-w-72">
+                    <img src="222.jpeg" alt="Image 1" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform hover:scale-105">
+                    <div>
+                        <p class="font-bold text-[90]">A grand villa near ECR </p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden border border-gray-200 rounded-md shadow-md w-[30] max-h-96 min-w-72">
+                    <img src="333.jpeg" alt="Image 1" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform hover:scale-105">
+                    <div>
+                        <p class="font-bold text-[90]">A grand villa near ECR </p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden border border-gray-200 rounded-md shadow-md w-[30] max-h-96 min-w-72">
+                    <img src="444.jpeg" alt="Image 1" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform hover:scale-105">
+                    <div>
+                        <p class="font-bold text-[90]">A grand villa near ECR </p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden border border-gray-200 rounded-md shadow-md w-[30] max-h-96 min-w-72">
+                    <img src="555.jpeg" alt="Image 1" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform hover:scale-105">
+                    <div>
+                        <p class="font-bold text-[90]">A grand villa near ECR </p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden border border-gray-200 rounded-md shadow-md w-[30]  max-h-96 min-w-72">
+                    <img src="666.jpeg" alt="Image 1" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform hover:scale-105">
+                    <div>
+                        <p class="font-bold text-[90]">A grand villa near ECR </p>
+                    </div>
+                </div>
+            </div> </div>
+
+    </section>
+    <!--galary phone-->
+    <div class="underline md:hidden">
+        <div class="container mx-auto grid grid-cols-1 gap-8 p-6">
+            <!-- Gallery items -->
+            <div class="relative overflow-hidden border border-gray-200 rounded-md shadow-md w-[30]">
+                <img src="111.jpeg" alt="Image 1" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform hover:scale-105">
+                <div>
+                    <p class="font-bold text-[90]">A grand villa near ECR </p>
+                </div>
+            </div>
+
+            <div class="relative overflow-hidden border border-gray-200 rounded-md shadow-md w-[30] min-w-72">
+                <img src="222.jpeg" alt="Image 1" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform hover:scale-105">
+                <div>
+                    <p class="font-bold text-[90]">A grand villa near ECR </p>
+                </div>
+            </div>
+            <div class="relative overflow-hidden border border-gray-200 rounded-md shadow-md w-[30] min-w-72">
+                <img src="333.jpeg" alt="Image 1" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform hover:scale-105">
+                <div>
+                    <p class="font-bold text-[90]">A grand villa near ECR </p>
+                </div>
+            </div>
+            <div class="relative overflow-hidden border border-gray-200 rounded-md shadow-md w-[30] min-w-72">
+                <img src="444.jpeg" alt="Image 1" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform hover:scale-105">
+                <div>
+                    <p class="font-bold text-[90]">A grand villa near ECR </p>
+                </div>
+            </div>
+            <div class="relative overflow-hidden border border-gray-200 rounded-md shadow-md w-[30] min-w-72">
+                <img src="555.jpeg" alt="Image 1" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform hover:scale-105">
+                <div>
+                    <p class="font-bold text-[90]">A grand villa near ECR </p>
+                </div>
+            </div>
+            <div class="relative overflow-hidden border border-gray-200 rounded-md shadow-md w-[30] min-w-72">
+                <img src="666.jpeg" alt="Image 1" class="object-cover w-full h-full transition-transform duration-300 ease-in-out transform hover:scale-105">
+                <div>
+                    <p class="font-bold text-[90]">A grand villa near ECR </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+<!--contact-->
+
+<section>
+    <div class="bg-gradient-to-b from-white to-gray-100">
+        <p class="text-6xl text-center color3 py-8 " id="contact"><span class="underline-animation ">Contact</span></p>  
+    </div>
+    <div class="bg-gradient-to-b from-gray-200 to-gray-300 flex flex-col md:flex-row justify-between gap-6">
+        <div class="w-full md:w-1/2 p-6">
+            <h1 class="text-5xl mb-4">Bougainvillea Luxury Villa</h1>
+            <p class="mb-4">A palace built with 7 bedrooms magnificent gardens a lovely pool with state of the art games rooms. Separate vegetarian and non-vegetarian kitchens. Round the clock service with a cook and caretaker in-house. Spacious bedrooms with the finest linens. Catering services available for large parties and events. 22000 sq ft is the built-up area so perfect for even large gatherings and weddings etc. dedicated private lane that ensures privacy for all.</p>
+        </div>
+        <div class="w-full md:w-1/2 p-6">
+            <h1 class="text-3xl mb-4">Contact us on</h1>
+            <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-call"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/><path d="M14.05 2a9 9 0 0 1 8 7.94"/><path d="M14.05 6A5 5 0 0 1 18 10"/></svg>
+                <p>987654321</p>
+            </div>
+            <div class="flex text-center gap-3 pt-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <p>Bougainvillea Luxury Villa,omr road,omr,chennai</p>
+            </div>
+            <div class="flex items-center gap-3 pt-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <p>Bougainvillea Luxury Villa@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script>
+        // JavaScript to toggle mobile menu visibility
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
