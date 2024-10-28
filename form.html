@@ -13,7 +13,7 @@
     <nav class="color-1 p-6">
         <div class="container mx-auto flex justify-between items-center">
             <div>
-                <a href="#" class="text-white text-lg font-semibold">Bougainvillea Luxury Villa</a>
+                <a href="#" class="text-white text-lg font-semibold">prithivi hall</a>
             </div>
             <!-- Mobile Menu Button -->
             <div class="flex md:hidden ">
@@ -44,22 +44,22 @@
             <li><a href="index.html" class="text-white hover:text-gray-300">Contact</a></li>
         </ul>
     </div>
-
+  
     <section class="text-gray-600 body-font relative">
         <form id="bookingForm">
           <div class="container px-5 py-12 mx-auto flex sm:flex-nowrap flex-wrap">
             <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-              <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.132208431791!2d80.2436796!3d12.834732200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525b4a4bd4b4db%3A0xce28f2c0b2655ce7!2sBougainvillea%20Luxury%20Villa!5e0!3m2!1sen!2sin!4v1718615719938!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade/Dk6WbNC5khMPrV3D8/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+              <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315137.3836447757!2d80.1605677!3d13.1161424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5263a3e7bf7e47%3A0x85f2c6da370b5c39!2sPrithvi+Hall!5e0!3m2!1sen!2sin!4v1631198431052!5m2!1sen!2sin"></iframe>
               <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
                 <div class="lg:w-1/2 px-6">
                   <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
-                  <p class="mt-1">Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter</p>
+                  <p class="mt-1">prithivi hall ,near LIC,ambattur,chennai-53</p>
                 </div>
                 <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
                   <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-                  <a class="text-indigo-500 leading-relaxed">example@email.com</a>
+                  <a class="text-indigo-500 leading-relaxed">prithivihall@email.com</a>
                   <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-                  <p class="leading-relaxed">123-456-7890</p>
+                  <p class="leading-relaxed">9876543210</p>
                 </div>
               </div>
             </div>
@@ -77,58 +77,85 @@
               <div class="relative mb-4">
                   <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
                   <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-                <div class="mb-4">
+              </div>
+
+              <!-- Room Selection Section -->
+              <div class="mb-4">
+                  <label class="block text-gray-700">Do you need a room?</label>
+                  <div class="flex items-center">
+                      <input type="radio" id="roomYes" name="room" value="yes" class="mr-2">
+                      <label for="roomYes" class="mr-4">Yes</label>
+                      <input type="radio" id="roomNo" name="room" value="no" class="mr-2">
+                      <label for="roomNo">No</label>
+                  </div>
+              </div>
+
+              <!-- Dropdown for selecting number of rooms (initially hidden) -->
+              <div class="mb-4 hidden" id="roomSelection">
+                  <label for="roomCount" class="block text-gray-700">Number of Rooms:</label>
+                  <select id="roomCount" name="roomCount" class="w-full mt-1 p-2 border rounded focus:ring-2 focus:ring-indigo-200 outline-none">
+                      <option value="1">1 Room</option>
+                      <option value="2">2 Rooms</option>
+                      <option value="3">3 Rooms</option>
+                      <option value="4">4 Rooms</option>
+                  </select>
+              </div>
+
+              <div class="mb-4">
                   <label for="date" class="block text-gray-700">Select a date:</label>
                   <input type="date" id="date" name="date" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-white focus:border-indigo-500 sm:text-sm">
               </div>
-              <button type="submit" class=" text-white bg-[color3]  border-0 py-2 px-6 focus:outline-none button hover:text-black rounded text-lg">Click Here To Book</button>
+              <button type="submit" class=" text-white bg-[color3] border-0 py-2 px-6 focus:outline-none button hover:text-black rounded text-lg">Click Here To Book</button>
               <p class="text-xs text-gray-500 mt-3"></p>
             </div>
           </div>
         </form>
       </section>
 
-
-
       <script>
-        // JavaScript to toggle mobile menu visibility
+        // Toggle mobile menu visibility
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-
         mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+          mobileMenu.classList.toggle('hidden');
         });
-
-
-
-
-
-//form page
-
-
-
-        document.getElementById('bookingForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const name = document.getElementById('name').value;
-    const number = document.getElementById('number').value;
-    const email = document.getElementById('email').value;
-    const date = document.getElementById('date').value;
-
-    // Retrieve existing bookings from localStorage
-    const bookings = JSON.parse(localStorage.getItem('bookings')) || {};
-
-    // Check if the date is already booked
-    if (bookings[date]) {
-        alert('Date is already booked');
-    } else {
-        // Save the booking
-        bookings[date] = { name, number, email };
-        localStorage.setItem('bookings', JSON.stringify(bookings));
-        alert('Booking successful');
-    }
-});
-    </script>
+      
+        // Toggle room selection dropdown
+        document.addEventListener("DOMContentLoaded", function () {
+          const roomSelection = document.getElementById("roomSelection");
+          const roomCount = document.getElementById("roomCount");
+      
+          document.querySelectorAll('input[name="room"]').forEach(radio => {
+            radio.addEventListener("change", function () {
+              roomSelection.classList.toggle("hidden", this.value !== "yes");
+            });
+          });
+      
+          // Handle form submission and gather form data
+          document.getElementById("bookingForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent default form submission
+      
+            // Gather form data
+            const formData = new FormData(this);
+      
+            // If room is selected, add the room count
+            if (document.getElementById("roomYes").checked) {
+              formData.append("numberOfRooms", roomCount.value);
+            }
+      
+            // Log the form data (or send it via fetch if needed)
+            for (let [key, value] of formData.entries()) {
+              console.log(`${key}: ${value}`);
+            }
+      
+            // Example: Uncomment below to send form data to server
+            // fetch('/your-server-endpoint', {
+            //   method: 'POST',
+            //   body: formData
+            // });
+          });
+        });
+      </script>
+      
 </body>
 </html>
